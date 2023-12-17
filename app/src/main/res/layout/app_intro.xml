@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_page_back"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:id="@+id/logo"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:src="@drawable/download"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:fontFamily="@font/rubik_black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/welcome"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_below="@id/logo"
+            android:textSize="@dimen/_33ssp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/rubik_black"
+            android:text="Video Downloader"
+            android:layout_marginTop="-10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/rubik_black"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:text="Easily download videos from the \ninternet onto your device."
+            android:textColor="#CFCFCF"
+
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/readme"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/continue_btn"
+            android:gravity="center"
+            android:text="continue"
+            android:id="@+id/continue_btn"
+            android:textAlignment="center"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/readme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/policy"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/rubik_black"
+            android:gravity="center"
+            android:layout_marginBottom="-3dp"
+            android:text="By tapping CONTINUE you indicate that you have read our"
+            android:textColor="#DCDCDC"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_9sdp"
+            android:fontFamily="@font/rubik_black"
+            android:gravity="center_horizontal"
+            android:text="Privacy policy"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

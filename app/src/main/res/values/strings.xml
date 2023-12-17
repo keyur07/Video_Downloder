@@ -1,0 +1,67 @@
+<resources xmlns:Color="http://schemas.android.com/apk/res-auto" xmlns:color="http://schemas.android.com/apk/res/android">
+    <string name="app_name" translatable="false">All Video Downloader</string>
+    <string name="tag_line" translatable="false">Download All Video on one Click</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="share_txt">Hey view/download this image</string>
+    <string name="share_image_via">Share File via...</string>
+    <string name="share_app_message">Download All Videos using this app. Download Now</string>
+
+
+    <!--AdMob Id-->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_ad" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="aboutInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!--About Page-->
+    <string name="version_tag"> Version 1.0.0</string>
+    <string name="company_name_title">Company</string>
+    <string name="company_tag_name">Coding Dunia</string>
+    <string name="email_title">Email</string>
+    <string name="email_tag">codingdunia2019@gmail.com</string>
+    <string name="website_title">Website</string>
+    <string name="website_tag">http://codingdunia.com/</string>
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_tag">Click to Read Privacy Policy</string>
+    <string name="about_title">About</string>
+    <string name="prv_policy">Privacy Policy</string>
+    <string name="enter_url">Enter Url</string>
+    <string name="enter_valid_url">Enter Valid Url</string>
+
+    <string name="do_u_want_to_dlt">Do you want to delete?</string>
+    <string name="file_deleted">File Deleted.</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_u_want_to_download_media_from_pvt">Don\'t Want to Download Media from Private Account?</string>
+    <string name="app_not_available">App Not Available.</string>
+    <string name="saved_to">Saved to:</string>
+    <string name="whatsapp_not_installed">Whtasapp not installed.</string>
+    <string name="no_app_installed">No application found to open this file.</string>
+
+
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="download_from_private_account">Download from Private Account</string>
+    <string name="paste_link">Paste Link</string>
+    <string name="download">Download</string>
+    <string name="paste">Paste</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="getting_downloading_link">Getting Downloading Link...</string>
+
+
+    <string name="gallery">Gallery</string>
+    <string name="download_started">Download Started</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view_stories">View Stories and Download from Private Account</string>
+    <string name="login">Login</string>
+    <string name="stories">Stories</string>
+    <string
+        name="messageWithLink" translatable="false"><a href="https://sites.google.com/view/videodownloderpolicy/home">Privacy policy</a></string>
+
+
+</resources>

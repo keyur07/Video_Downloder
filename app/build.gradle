@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+}
+
+apply plugin: 'com.android.application'
+android {
+    namespace 'com.cd.statussaver'
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.cd.statussaver"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a'
+            abiFilters 'arm64-v8a'
+            abiFilters 'x86'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'org.apache.commons:commons-lang3:3.5'
+    //noinspection GradleDependency
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'org.jsoup:jsoup:1.12.1'
+    implementation 'com.google.android.play:core:1.7.2'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+
+    //animation
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    //
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'androidx.lifecycle:lifecycle-process:2.3.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+
+    def lifecycle_version = "2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+}
